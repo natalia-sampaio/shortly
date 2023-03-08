@@ -1,0 +1,21 @@
+.banner {
+    text-align: center;
+    padding: 1em 1.5em;
+}
+
+.banner__image {
+    margin-bottom: 2em;
+    width: 130vw;
+}
+
+.banner__title {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--very-dark-blue);
+}
+
+.banner__description {
+    color: var(--grayish-violet);
+    margin: 1em 0;
+    line-height: 1.6em;
+}

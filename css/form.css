@@ -1,0 +1,28 @@
+.shorten-form {
+    background: url("../images/bg-shorten-mobile.svg") no-repeat;
+    background-position-x: right;
+    background-position-y: top;
+    background-color: var(--very-dark-violet);
+    display: grid;
+    align-items: center;
+    width: 350px;
+    height: 160px;
+    border-radius: 0.5em;
+    margin: 0 auto;
+    position: relative;
+    bottom: -4.5em;
+}
+
+.shorten-form__input {
+    width: 80%;
+    border-radius: 0.5em;
+    border: 0;
+    padding: 1.2em;
+    margin: 0 auto;
+}
+
+.shorten-form__input::placeholder {
+    font: var(--font);
+    font-size: 18px;
+    font-weight: 500;
+}

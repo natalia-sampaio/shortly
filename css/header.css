@@ -1,0 +1,43 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2em 1.5em 1em 1.5em;
+}
+
+.container {
+    position: relative;
+}
+
+.container__checkbox {
+    display: none;
+}
+
+.container__image-burger-menu {
+    width: 64px;
+    height: 64px;
+    background-image: url("../images/burger-menu.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+}
+
+.nav-list {
+    display: none;
+    background: var(--dark-violet);
+    border-radius: 0.5em;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 76vw;
+    padding: 2em 1em;
+}
+
+.container__checkbox:checked~.nav-list {
+    display: block;
+    text-align: center;
+}
+
+.nav-list__item {
+    padding: 1em;
+}

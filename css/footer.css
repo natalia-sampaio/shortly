@@ -1,0 +1,33 @@
+.footer {
+    background: var(--very-dark-violet);
+    display: grid;
+    justify-content: center;
+}
+
+.footer__image {
+    margin: 4em auto;
+}
+
+.footer__list {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.footer__list-title {
+    color: white;
+    margin-bottom: 2em;
+}
+
+.footer__list-item {
+    margin-bottom: 1em;
+}
+
+.footer__link {
+    text-decoration: none;
+    color: var(--grayish-violet);
+}
+
+.footer__list-contact {
+    display: flex;
+    justify-content: space-between;
+}

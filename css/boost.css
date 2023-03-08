@@ -1,0 +1,15 @@
+.boost {
+    background: url("../images/bg-boost-mobile.svg");
+    background-color: var(--very-dark-blue);
+    height: 300px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.boost__title {
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+    align-self: end;
+}

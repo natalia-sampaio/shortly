@@ -1,0 +1,42 @@
+.card {
+    background: white;
+    border-radius: 0.5em;
+    width: 90%;
+    margin: 0 auto 6em auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card__image {
+    background: var(--very-dark-violet);
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -3em;
+}
+
+.card__title {
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--very-dark-violet);
+}
+
+.card__description {
+    color: var(--grayish-violet);
+    margin: 2em;
+    line-height: 1.6em;
+}
+
+.card__strip {
+    background: var(--cyan);
+    border: 0;
+    height: 4em;
+    width: 0.5em;
+    position: relative;
+    bottom: -4.5em;
+}

@@ -1,9 +1,18 @@
+@import "./css/header.css";
+@import "./css/banner.css";
+@import "./css/components.css";
+@import "./css/form.css";
+@import "./css/informations.css";
+@import "./css/card.css";
+@import "./css/boost.css";
+@import "./css/footer.css";
 
 :root {
     --cyan: hsl(180, 66%, 49%);
     --dark-violet: hsl(257, 27%, 26%);
     --red: hsl(0, 87%, 67%);
     --gray: hsl(0, 0%, 75%);
+    --very-light-gray: #f0f1f6;
     --grayish-violet: hsl(257, 7%, 63%);
     --very-dark-blue: hsl(255, 11%, 22%);
     --very-dark-violet: hsl(260, 8%, 14%);

@@ -1,0 +1,20 @@
+.informations {
+    background: var(--very-light-gray);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 10em;
+    text-align: center;
+}
+
+.informations__title {
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--very-dark-blue);
+}
+
+.informations__description {
+    color: var(--grayish-violet);
+    line-height: 1.6em;
+    margin: 2em 1em 6em 1em;
+}

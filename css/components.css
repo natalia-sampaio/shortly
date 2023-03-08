@@ -12,9 +12,12 @@
 }
 
 .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: var(--cyan);
-    padding: 0.8em;
     border-radius: 2em;
+    height: 3em;
 }
 
 .button--get-started {
@@ -31,4 +34,29 @@
     width: 90%;
     height: 3em;
     margin: 0 auto;
+}
+
+@media screen and (min-width: 1440px) {
+    .link {
+        background: var(--grayish-violet);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+
+    .link--white {
+        background: white;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+
+    .button {
+        width: 150px;
+        margin: 0;
+    }
+
+    .button--shorten-form {
+        width: 15%;
+    }
 }

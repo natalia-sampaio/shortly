@@ -14,45 +14,50 @@
 </head>
 <body>
   <header class="header">
-    <img src="./images/logo.svg" alt="Shortly logo">
+    <img src="./images/logo.svg" alt="Shortly logo" class="header__image">
     <div class="container">
       <input type="checkbox" id="menu" class="container__checkbox">
       <label for="menu" class="container__label">
         <span class="container__image-burger-menu"></span>
       </label>
       <ul class="nav-list">
-        <li class="nav-list__item">
-          <a href="#" class="link">Features</a>
-        </li>
-        <li class="nav-list__item">
-          <a href="#" class="link">Pricing</a>
-        </li>
-        <li class="nav-list__item">
-          <a href="#" class="link">Resources</a>
-        </li>
-        <hr>
-        <li class="nav-list__item">
-          <a href="#" class="link">Login</a>
-        </li>
-        <li class="button">
-          <a href="#" class="link">Sign Up</a>
-        </li>
+        <div class="nav-list__part-1">
+          <li class="nav-list__item">
+            <a href="#" class="link">Features</a>
+          </li>
+          <li class="nav-list__item">
+            <a href="#" class="link">Pricing</a>
+          </li>
+          <li class="nav-list__item">
+            <a href="#" class="link">Resources</a>
+          </li>
+        </div>
+        <div class="nav-list__part-2">
+          <li class="nav-list__item">
+            <a href="#" class="link">Login</a>
+          </li>
+          <li class="button">
+            <a href="#" class="link link--white">Sign Up</a>
+          </li>
+        </div>
       </ul>
     </div>
   </header>
   <section class="banner">
     <img src="./images/illustration-working.svg" alt="illustration of a person working" class="banner__image">
-    <h1 class="banner__title">More than just shorter links</h1>
-    <p class="banner__description">Build your brand’s recognition and get detailed insights on how your links are performing.</p>
-    <div class="button button--get-started">
-      <a href="#" class="link link--get-started">Get Started</a>
+    <div class="banner__content">
+      <h1 class="banner__title">More than just shorter links</h1>
+      <p class="banner__description">Build your brand’s recognition and get detailed insights on how your links are performing.</p>
+      <div class="button button--get-started">
+        <a href="#" class="link link--get-started link--white">Get Started</a>
+      </div>
     </div>
   </section>
   <form class="shorten-form">
     <input type="url" placeholder="Shorten a link here..." aria-label="input for url to be shortened"
       class="shorten-form__input">
     <button type="submit" class="button button--shorten-form">
-      <span class="link">Shorten It!</span>
+      <span class="link link--white">Shorten It!</span>
     </button>
   </form>
   <section class="informations">
@@ -60,40 +65,42 @@
     <p class="informations__description">
       Track how your links are performing across the web with our advanced statistics dashboard.
     </p>
-    <div class="card">
-      <div class="card__image">
-        <img src="./images/icon-brand-recognition.svg" alt="brand recognition">
+    <div class="informations__cards">
+      <div class="card">
+        <div class="card__image">
+          <img src="./images/icon-brand-recognition.svg" alt="brand recognition">
+        </div>
+        <h3 class="card__title">Brand Recognition</h3>
+        <p class="card__description">
+          Boost your brand recognition with each click. Generic links don’t mean a thing. Branded links help instil confidence in your content.
+        </p>
+        <hr class="card__strip">
       </div>
-      <h3 class="card__title">Brand Recognition</h3>
-      <p class="card__description">
-        Boost your brand recognition with each click. Generic links don’t mean a thing. Branded links help instil confidence in your content.
-      </p>
-      <hr class="card__strip">
-    </div>
-    <div class="card">
-      <div class="card__image">
-        <img src="./images/icon-detailed-records.svg" alt="detailed records">
+      <div class="card">
+        <div class="card__image">
+          <img src="./images/icon-detailed-records.svg" alt="detailed records">
+        </div>
+        <h3 class="card__title">Detailed Records</h3>
+        <p class="card__description">
+          Gain insights into who is clicking your links. Knowing when and where people engage with your content helps inform better decisions.
+        </p>
+        <hr class="card__strip">
       </div>
-      <h3 class="card__title">Detailed Records</h3>
-      <p class="card__description">
-        Gain insights into who is clicking your links. Knowing when and where people engage with your content helps inform better decisions.
-      </p>
-      <hr class="card__strip">
-    </div>
-    <div class="card">
-      <div class="card__image">
-        <img src="./images/icon-fully-customizable.svg" alt="fully customizable">
+      <div class="card">
+        <div class="card__image">
+          <img src="./images/icon-fully-customizable.svg" alt="fully customizable">
+        </div>
+        <h3 class="card__title">Fully Customizable</h3>
+        <p class="card__description">
+          Improve brand awareness and content discoverability through customizable links, supercharging audience engagement.
+        </p>
       </div>
-      <h3 class="card__title">Fully Customizable</h3>
-      <p class="card__description">
-        Improve brand awareness and content discoverability through customizable links, supercharging audience engagement.
-      </p>
     </div>
   </section>
   <div class="boost">
     <h2 class="boost__title">Boost your links today</h2>
     <div class="button button--get-started">
-      <a href="#" class="link link--get-started">Get Started</a>
+      <a href="#" class="link link--get-started link--white">Get Started</a>
     </div>
   </div>
   <footer class="footer">

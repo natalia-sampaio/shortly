@@ -26,3 +26,24 @@
     font-size: 18px;
     font-weight: 500;
 }
+
+@media screen and (min-width: 1440px) {
+    .shorten-form {
+        background: url("../images/bg-shorten-desktop.svg") no-repeat;
+        background-position-x: right;
+        background-position-y: top;
+        background-color: var(--very-dark-violet);
+        width: 1110px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .shorten-form__input {
+        width: 70%;
+        border-radius: 0.5em;
+        border: 0;
+        padding: 1.2em;
+        margin: 0;
+    }
+}

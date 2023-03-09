@@ -1,5 +1,6 @@
 .boost {
-    background: url("../images/bg-boost-mobile.svg");
+    background: url("../images/bg-boost-mobile.svg") no-repeat;
+    background-size: cover;
     background-color: var(--very-dark-blue);
     height: 300px;
     display: grid;
@@ -12,4 +13,21 @@
     font-weight: 700;
     color: white;
     align-self: end;
+}
+
+.boost__button {
+    justify-self: center;
+}
+
+@media screen and (min-width: 1440px) {
+    .boost {
+        background: url("../images/bg-boost-desktop.svg") no-repeat;
+        background-size: cover;
+        background-color: var(--very-dark-blue);
+        height: 250px;
+    }
+
+    .boost__title {
+        font-size: 36px;
+    }
 }

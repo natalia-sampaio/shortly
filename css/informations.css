@@ -37,7 +37,7 @@
 
     .informations__cards {
         display: flex;
-        flex-wrap: wrap;
+        justify-content: space-between;
         margin: 6em 10rem;
     }
 }

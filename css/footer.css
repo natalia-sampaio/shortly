@@ -1,16 +1,12 @@
 .footer {
     background: var(--very-dark-violet);
-    display: grid;
-    justify-content: center;
-}
-
-.footer__image {
-    margin: 4em auto;
+    padding: 3em 4em;
+    text-align: center;
 }
 
 .footer__list {
     text-align: center;
-    margin-bottom: 2em;
+    margin-top: 3em;
 }
 
 .footer__list-title {
@@ -29,5 +25,30 @@
 
 .footer__list-contact {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 3em;
+}
+
+@media screen and (min-width: 1440px) {
+    .footer {
+        display: grid;
+        grid-template-columns: 2fr repeat(4, 1fr);
+        padding: 3em 10rem;
+    }
+
+    .footer__image {
+        grid-column: 1 / 2;
+        justify-self: left;
+    }
+
+    .footer__list {
+        margin-top: 0;
+        text-align: left;
+    }
+
+    .footer__list-contact {
+        grid-column: -1 / -2;
+        margin: 0;
+    }
 }

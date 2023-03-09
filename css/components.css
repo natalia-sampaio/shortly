@@ -21,7 +21,6 @@
 }
 
 .button--get-started {
-    margin: 0 auto;
     width: 180px;
     text-align: center;
 }
@@ -58,5 +57,9 @@
 
     .button--shorten-form {
         width: 15%;
+    }
+
+    .button--get-started {
+        width: 200px;
     }
 }

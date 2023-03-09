@@ -6,7 +6,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="style.css">
   <title>Shortly - URL shortening API</title>
@@ -74,7 +74,7 @@
         <p class="card__description">
           Boost your brand recognition with each click. Generic links don’t mean a thing. Branded links help instil confidence in your content.
         </p>
-        <hr class="card__strip">
+        <!-- <hr class="card__strip"> -->
       </div>
       <div class="card">
         <div class="card__image">
@@ -84,7 +84,7 @@
         <p class="card__description">
           Gain insights into who is clicking your links. Knowing when and where people engage with your content helps inform better decisions.
         </p>
-        <hr class="card__strip">
+        <!-- <hr class="card__strip"> -->
       </div>
       <div class="card">
         <div class="card__image">
@@ -99,12 +99,16 @@
   </section>
   <div class="boost">
     <h2 class="boost__title">Boost your links today</h2>
-    <div class="button button--get-started">
-      <a href="#" class="link link--get-started link--white">Get Started</a>
+    <div class="boost__button">
+      <div class="button button--get-started">
+        <a href="#" class="link link--get-started link--white">Get Started</a>
+      </div>
     </div>
   </div>
   <footer class="footer">
-    <img src="./images/logo-footer.svg" alt="Shortly logo" class="footer__image">
+    <div class="footer__image">
+      <img src="./images/logo-footer.svg" alt="Shortly logo">
+    </div>
     <ul class="footer__list">
       <li class="footer__list-title">Features</li>
       <li class="footer__list-item">
@@ -160,8 +164,8 @@
     </ul>
   </footer>
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://github.com/natalia-sampaio">Natália S. R. S. Andrade</a>.
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="attribution__link">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/natalia-sampaio" class="attribution__link">Natália S. R. S. Andrade</a>.
   </div>
 </body>
 </html>

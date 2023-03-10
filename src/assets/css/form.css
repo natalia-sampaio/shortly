@@ -1,3 +1,7 @@
+.shorten {
+    margin: 8em 0 -3em 0;
+}
+
 .shorten-form {
     background: url("@/assets/images/bg-shorten-mobile.svg") no-repeat;
     background-position-x: right;
@@ -5,12 +9,12 @@
     background-color: var(--very-dark-violet);
     display: grid;
     align-items: center;
+    border-radius: 0.5em;
     width: 350px;
     height: 160px;
-    border-radius: 0.5em;
-    margin: 0 auto;
     position: relative;
-    bottom: -4.5em;
+    top: -80px; /* because this is half of the card height */
+    margin: 0 auto;
 }
 
 .shorten-form__input {

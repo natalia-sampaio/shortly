@@ -20,6 +20,10 @@
     height: 3em;
 }
 
+.button:hover {
+    cursor: pointer;
+}
+
 .button--get-started {
     width: 180px;
     text-align: center;

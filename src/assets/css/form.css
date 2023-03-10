@@ -1,5 +1,5 @@
 .shorten-form {
-    background: url("../images/bg-shorten-mobile.svg") no-repeat;
+    background: url("@/assets/images/bg-shorten-mobile.svg") no-repeat;
     background-position-x: right;
     background-position-y: top;
     background-color: var(--very-dark-violet);
@@ -29,7 +29,7 @@
 
 @media screen and (min-width: 1440px) {
     .shorten-form {
-        background: url("../images/bg-shorten-desktop.svg") no-repeat;
+        background: url("@/assets/images/bg-shorten-desktop.svg") no-repeat;
         background-position-x: right;
         background-position-y: top;
         background-color: var(--very-dark-violet);

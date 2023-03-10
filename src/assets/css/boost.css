@@ -1,5 +1,5 @@
 .boost {
-    background: url("../images/bg-boost-mobile.svg") no-repeat;
+    background: url("@/assets/images/bg-boost-mobile.svg") no-repeat;
     background-size: cover;
     background-color: var(--very-dark-blue);
     height: 300px;
@@ -21,7 +21,7 @@
 
 @media screen and (min-width: 1440px) {
     .boost {
-        background: url("../images/bg-boost-desktop.svg") no-repeat;
+        background: url("@/assets/images/bg-boost-desktop.svg") no-repeat;
         background-size: cover;
         background-color: var(--very-dark-blue);
         height: 250px;

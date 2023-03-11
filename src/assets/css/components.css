@@ -24,6 +24,10 @@
     cursor: pointer;
 }
 
+.button:active {
+    background: rgb(160, 237, 237);
+}
+
 .button--get-started {
     width: 180px;
     text-align: center;

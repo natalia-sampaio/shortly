@@ -13,8 +13,12 @@
     width: 350px;
     height: 160px;
     position: relative;
-    top: -80px; /* because this is half of the card height */
+    top: -80px; /* because this is half of the form height */
     margin: 0 auto;
+}
+
+.shorten-form-box {
+    text-align: center;
 }
 
 .shorten-form__input {
@@ -22,7 +26,6 @@
     border-radius: 0.5em;
     border: 0;
     padding: 1.2em;
-    margin: 0 auto;
 }
 
 .shorten-form__input::placeholder {
@@ -39,15 +42,16 @@
         background-color: var(--very-dark-violet);
         width: 1110px;
         display: flex;
-        align-items: center;
-        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    .shorten-form-box {
+        width: 80%;
     }
 
     .shorten-form__input {
-        width: 70%;
         border-radius: 0.5em;
         border: 0;
         padding: 1.2em;
-        margin: 0;
     }
 }

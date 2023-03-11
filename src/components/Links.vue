@@ -1,13 +1,19 @@
 <script>
 import { useLocalStorage } from '@vueuse/core'
 
-    export default {
-        data() {
+export default {
+    data() {
         return {
             links: useLocalStorage("links", [])
         }
+    },
+    methods: {
+        writeToClipboard(text) {
+            navigator.clipboard
+                .writeText(text)
+        }
     }
-    }
+}
 </script>
 
 <template>
@@ -16,7 +22,7 @@ import { useLocalStorage } from '@vueuse/core'
             <span class="original-link">{{ link.originalLink }}</span>
             <div class="card-bottom">
                 <span class="short-link">{{ link.shortLink }}</span>
-                <button class="button button--copy">Copy</button>
+                <button :class="['button', 'button--copy', error ? 'button--copied' : '']" @click="() => writeToClipboard(link.shortLink)">Copy</button>
             </div>
         </div>
     </div>

@@ -23,7 +23,7 @@ export default {
             const request = `https://api.shrtco.de/v2/shorten?url=${this.url}`;
             const fetchResponse = await fetch(request);
             const response = await fetchResponse.json();
-            return response.result.short_link
+            return response.result.full_short_link
         }
     }
 }

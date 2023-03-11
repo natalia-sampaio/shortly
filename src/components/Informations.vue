@@ -5,7 +5,7 @@
             Track how your links are performing across the web with our advanced statistics dashboard.
         </p>
         <div class="informations__cards">
-            <div class="card">
+            <div class="card card--informations">
                 <div class="card__image">
                     <img src="@/assets/images/icon-brand-recognition.svg" alt="brand recognition">
                 </div>
@@ -15,7 +15,7 @@
                 </p>
                 <!-- <hr class="card__strip"> -->
             </div>
-            <div class="card">
+            <div class="card card--informations">
                 <div class="card__image">
                     <img src="@/assets/images/icon-detailed-records.svg" alt="detailed records">
                 </div>
@@ -25,7 +25,7 @@
                 </p>
                 <!-- <hr class="card__strip"> -->
             </div>
-            <div class="card">
+            <div class="card card--informations">
                 <div class="card__image">
                     <img src="@/assets/images/icon-fully-customizable.svg" alt="fully customizable">
                 </div>

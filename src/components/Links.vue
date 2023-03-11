@@ -11,43 +11,83 @@ import { useLocalStorage } from '@vueuse/core'
 </script>
 
 <template>
-    <div v-for="link in links" class="card card--link">
-        <span class="original-link">{{ link.originalLink }}</span>
-        <span class="short-link">{{ link.shortLink }}</span>
-        <button class="button button--copy">Copy</button>
+    <div>
+        <div v-for="link in links" class="card card--link">
+            <span class="original-link">{{ link.originalLink }}</span>
+            <div class="card-bottom">
+                <span class="short-link">{{ link.shortLink }}</span>
+                <button class="button button--copy">Copy</button>
+            </div>
+        </div>
     </div>
 </template>
 
 <style scoped>
     .card--link {
-        margin: 0 auto;
-        padding: 0;
+        margin: 1em auto;
         width: 90%;
     }
 
     .original-link {
-        border-bottom: 2px solid var(--very-light-gray);
-    }
-
-    .original-link, .short-link {
         padding: 1em;
         height: 1em;
+    }
+
+    .original-link{
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
     }
 
+    .card-bottom {
+        border-top: 2px solid var(--very-light-gray);
+        padding: 1em;
+        display: grid;
+    }
+
     .short-link {
         color: var(--cyan);
+        margin-bottom: 1em;
     }
 
     .button--copy {
+        justify-self: center;
         font-family: var(--font);
         font-weight: 700;
-        font-size: 18px;
+        font-size: 16px;
         color: white;
         border-radius: 0.5em;
-        margin: 0 1em 1em 1em;
+        width: 100%;
         border: 0;
+    }
+    
+    @media screen and (min-width: 1440px) {
+        .card--link {
+            width: 1110px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .original-link {
+            width: 50%;
+        }
+
+        .card-bottom {
+            border: 0;
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: end;
+        }
+
+        .short-link {
+            margin: 0 1em;
+        }
+
+        .button--copy {
+            width: 180px;
+        }
+
     }
 </style>

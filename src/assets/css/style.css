@@ -1,12 +1,4 @@
-@import "./css/header.css";
-@import "./css/banner.css";
-@import "./css/components.css";
-@import "./css/form.css";
-@import "./css/informations.css";
-@import "./css/card.css";
-@import "./css/boost.css";
-@import "./css/footer.css";
-@import "./css/attribution.css";
+@import "./components.css";
 
 :root {
     --cyan: hsl(180, 66%, 49%);

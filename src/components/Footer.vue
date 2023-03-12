@@ -58,3 +58,60 @@
         </ul>
     </footer>
 </template>
+
+<style scoped>
+.footer {
+    background: var(--very-dark-violet);
+    padding: 3em 4em;
+    text-align: center;
+}
+
+.footer__list {
+    text-align: center;
+    margin-top: 3em;
+}
+
+.footer__list-title {
+    color: white;
+    margin-bottom: 2em;
+}
+
+.footer__list-item {
+    margin-bottom: 1em;
+}
+
+.footer__link {
+    text-decoration: none;
+    color: var(--grayish-violet);
+}
+
+.footer__list-contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 3em;
+}
+
+@media screen and (min-width: 1440px) {
+    .footer {
+        display: grid;
+        grid-template-columns: 2fr repeat(4, 1fr);
+        padding: 3em 10rem;
+    }
+
+    .footer__image {
+        grid-column: 1 / 2;
+        justify-self: left;
+    }
+
+    .footer__list {
+        margin-top: 0;
+        text-align: left;
+    }
+
+    .footer__list-contact {
+        grid-column: -1 / -2;
+        margin: 0;
+    }
+}
+</style>

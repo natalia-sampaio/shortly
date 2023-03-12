@@ -51,21 +51,79 @@ export default {
 </template>
 
 <style scoped>
-    .error-message {
-        font-size: 16px;
-        color: red;
-        font-style: italic;
-        margin: 0 auto;
-        display: block;
+.shorten {
+    margin: 8em 0 -3em 0;
+}
+
+.shorten-form {
+    background: url("@/assets/images/bg-shorten-mobile.svg") no-repeat;
+    background-position-x: right;
+    background-position-y: top;
+    background-color: var(--very-dark-violet);
+    display: grid;
+    align-items: center;
+    border-radius: 0.5em;
+    width: 350px;
+    height: 160px;
+    position: relative;
+    top: -80px; /* because this is half of the form height */
+    margin: 0 auto;
+}
+
+.shorten-form-box {
+    text-align: center;
+}
+
+.shorten-form__input {
+    width: 80%;
+    border-radius: 0.5em;
+    border: 0;
+    padding: 1.2em;
+}
+
+.shorten-form__input::placeholder {
+    font: var(--font);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.error-message {
+    font-size: 16px;
+    color: red;
+    font-style: italic;
+    margin: 0 auto;
+    display: block;
+}
+.error-input {
+    border: 1px solid red;
+}
+.error-input::placeholder {
+    background: red;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 1440px) {
+    .shorten-form {
+        background: url("@/assets/images/bg-shorten-desktop.svg") no-repeat;
+        background-position-x: right;
+        background-position-y: top;
+        background-color: var(--very-dark-violet);
+        width: 1110px;
+        display: flex;
+        flex-wrap: wrap;
     }
-    .error-input {
-        border: 1px solid red;
+
+    .shorten-form-box {
+        width: 80%;
     }
-    .error-input::placeholder {
-        background: red;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        text-decoration: none;
+
+    .shorten-form__input {
+        border-radius: 0.5em;
+        border: 0;
+        padding: 1.2em;
     }
+}
 </style>

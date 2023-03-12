@@ -37,3 +37,48 @@
         </div>
     </section>
 </template>
+
+<style>
+.informations {
+    margin-top: 5em;
+    text-align: center;
+}
+
+.informations__title {
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--very-dark-blue);
+}
+
+.informations__description {
+    color: var(--grayish-violet);
+    line-height: 1.6em;
+    margin: 2em 1em 6em 1em;
+}
+
+.informations {
+    padding-bottom: 6em;
+    margin-bottom: -6em;
+}
+
+@media screen and (min-width: 1440px) {
+    .informations__title,
+    .informations__description {
+        max-width: 40%;
+    }
+
+    .informations__title {
+        margin: 0 auto;
+    }
+
+    .informations__description {
+        margin: 1em auto;
+    }
+
+    .informations__cards {
+        display: flex;
+        justify-content: space-between;
+        margin: 6em 10rem;
+    }
+}
+</style>

@@ -38,7 +38,7 @@ export default {
 <template>
     <div class="shorten">
         <div class="shorten-form">
-            <div class="shorten-form-box">
+            <div class="shorten-form__box">
                 <input v-model="url" type="url" placeholder="Shorten a link here..." aria-label="input for url to be shortened"
                 :class="['shorten-form__input', error ? 'error-input' :'']">
                 <span v-if="error" class="error-message">Please add a link</span>
@@ -70,7 +70,7 @@ export default {
     margin: 0 auto;
 }
 
-.shorten-form-box {
+.shorten-form__box {
     text-align: center;
 }
 
@@ -116,7 +116,7 @@ export default {
         flex-wrap: wrap;
     }
 
-    .shorten-form-box {
+    .shorten-form__box {
         width: 80%;
     }
 

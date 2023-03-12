@@ -7,7 +7,7 @@
                 <span class="container__image-burger-menu"></span>
             </label>
             <ul class="nav-list">
-                <div class="nav-list__part-1">
+                <div class="nav-list__top">
                     <li class="nav-list__item">
                         <a href="#" class="link">Features</a>
                     </li>
@@ -18,7 +18,7 @@
                         <a href="#" class="link">Resources</a>
                     </li>
                 </div>
-                <div class="nav-list__part-2">
+                <div class="nav-list__bottom">
                     <li class="nav-list__item">
                         <a href="#" class="link">Login</a>
                     </li>
@@ -72,7 +72,7 @@
     text-align: center;
 }
 
-.nav-list__part-1 {
+.nav-list__top {
     border-bottom: 1px solid var(--grayish-violet);
 }
 
@@ -94,8 +94,8 @@
     }
 
     .nav-list,
-    .nav-list__part-1,
-    .nav-list__part-2 {
+    .nav-list__top,
+    .nav-list__bottom {
         border-bottom: 0;
         display: flex;
     }
@@ -106,7 +106,7 @@
         justify-content: space-between;
     }
 
-    .nav-list__part-2 {
+    .nav-list__bottom {
         margin-right: 10rem;
     }
 }

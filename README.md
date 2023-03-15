@@ -18,6 +18,7 @@ This is a solution to the [Shortly URL shortening API Challenge challenge on Fro
   - [The challenge](#the-challenge)
   - [Screenshots](#screenshot)
   - [Links](#links)
+  - [Project Setup](#project-setup)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
@@ -50,6 +51,30 @@ Users should be able to:
 
 - Solution URL: [GitHub](https://github.com/natalia-sampaio/shortly)
 - Live Site URL: [Vercel](https://shortly-lovat.vercel.app/)
+
+### Project Setup
+
+```sh
+npm install
+```
+
+#### Compile and Hot-Reload for Development
+
+```sh
+npm run dev
+```
+
+#### Compile and Minify for Production
+
+```sh
+npm run build
+```
+
+#### Lint with [ESLint](https://eslint.org/)
+
+```sh
+npm run lint
+```
 
 ## My process
 
@@ -96,9 +121,11 @@ In future projects I want to improve the usage of Vue.js, especially about best 
 
 ## Author
 
-- Website - [Natália S. R. S. Andrade](https://natalia-sampaio.github.io/)
-- Frontend Mentor - [@natalia-sampaio](https://www.frontendmentor.io/profile/natalia-sampaio)
-- Twitter - [@NataliaSRSA](https://twitter.com/NataliaSRSA)
+<a href="natalia.srsa@proton.me"><img src="https://img.shields.io/badge/-Email-0D1117?style=for-the-badge&logo=protonmail&labelColor=0D1117&textColor=0D1117"/></a>
+
+<a href="https://www.linkedin.com/in/natalia-srs/"><img src="https://img.shields.io/badge/-LinkedIn-0D1117?style=for-the-badge&logo=linkedin&labelColor=0D1117&textColor=0D1117"/></a>
+
+<a href="https://twitter.com/NataliaSRSA"><img src="https://img.shields.io/badge/-Twitter-0D1117?style=for-the-badge&logo=twitter&labelColor=0D1117&textColor=0D1117"/></a>
 
 ## Acknowledgments
 
